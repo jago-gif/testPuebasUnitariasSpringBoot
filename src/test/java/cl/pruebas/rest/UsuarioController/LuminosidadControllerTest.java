@@ -42,6 +42,7 @@ public class LuminosidadControllerTest {
 
     @MockBean
     private UsuarioServiceImpl usuarioService;
+
     @MockBean
     private LuminocidadServiceImpl luminocidadService;
 
@@ -50,7 +51,7 @@ public class LuminosidadControllerTest {
 
     @DisplayName("test guardar Luminosidad")
     @Test
-    void testGuardarUsuario() throws Exception {
+    void testGuardarLuminosidad() throws Exception {
        Usuario usuario = Usuario.builder()
             .id(1L)
             .nombre("Javier")
@@ -87,7 +88,7 @@ public class LuminosidadControllerTest {
 
     @DisplayName("test obtener luminosidad  por id")
     @Test
-    void testObtenerUsuarioById() throws Exception {
+    void testObtenerLuminosidadById() throws Exception {
        //given
        long id=1L;
        Usuario usuario = Usuario.builder()
