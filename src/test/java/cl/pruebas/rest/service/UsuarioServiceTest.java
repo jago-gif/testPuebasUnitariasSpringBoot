@@ -60,7 +60,7 @@ public class UsuarioServiceTest {
         verify(usuarioRepository, times(1)).deleteById(usuarioid);
     }
 
-    @DisplayName("test listar empleados")
+    @DisplayName("test listar usuarios")
     @Test
     void testGetAllUsuarios() {
         //given
@@ -81,7 +81,7 @@ public class UsuarioServiceTest {
         assertThat(usuarios.size()).isEqualTo(2);
     }
 
-    @DisplayName("test listar empleados vacia")
+    @DisplayName("test listar usuarios vacia")
     @Test
     void testGetAllUsuariosVacia() {
         //given

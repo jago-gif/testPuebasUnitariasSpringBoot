@@ -169,7 +169,7 @@ public class UsuarioControllerTest {
                     .andDo(print());
     }
 
-    @DisplayName("test guardar empleados")
+    @DisplayName("test guardar usuario")
     @Test
     void testGuardarUsuario() throws Exception {
        Usuario usuario = Usuario.builder()
