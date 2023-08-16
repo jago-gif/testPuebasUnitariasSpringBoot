@@ -99,8 +99,6 @@ public class LuminosidadControllerTest {
             .username("jg")
             .build();
     
-    given(usuarioService.saveUsuario(any(Usuario.class)))
-            .willAnswer((invocation) -> invocation.getArgument(0));
 
         Luminosidad luminosidad = Luminosidad.builder()
             .id(1L)
